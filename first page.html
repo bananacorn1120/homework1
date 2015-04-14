@@ -17,22 +17,27 @@
 			<p>pre還原回來的格式，p則文字敘述會串接</p>
 			<pre>一一     三三   五五   七七   九九</pre>
 
-			<form action="http://www.meigic.tw/test.php">
+			<form method="post" action="http://www.meigic.tw/test.php" enctype="multipart/form-data">
+
 				<div>
-					<label>NickName</label>
-					<input name="NickName"type="text">
+					<label for="NickName" > NickName:</label>
+					<input id="NickName" name="NickName"type="text" placeholder="請輸入名稱" />
 				</div>
 
 				<div>
-					<label>Email:</label>
-					<input name="Email"type="email">
+					<label for="email">Email:</label>
+					<input name="Email"type="email" placeholder="請輸入電子信箱" />
 				</div>
 
 				<div>
-					<label>Password:</label>
-					<input name="Password"type="password">
+					<label for="Password">Password:</label>
+					<input name="Password"type="password" placeholder="請輸入密碼" />
 				</div>
 
+				<div>
+					<label>Pic:</label>
+					<input name="Pic_file∏"type="file" />
+				</div>
 
 				<button>Sign Up</button>
 
@@ -129,7 +134,7 @@
 	<figcaption>Miss_seven by lucy</figcaption>
 	<nav>
 		<ul>
-			<上一頁>
+			<bottom>上一頁</bottom>
 			<下一頁>
 		</ul>
 	</nav>
